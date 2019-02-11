@@ -27,7 +27,7 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--mat
 - administration--*
   - [administration--demote-user-from-admin](bash-commands--specific/administration--demote-user-from-admin.sh)  
     Demotes the test user from administrator level to standard user level.
-  - [administration--promote-test-user-as-admin](bash-commands--specific/administration--promote-test-user-as-admin.sh)  
+  - [administration--promote-test-user-as-admin](bash-commands--specific/administration--promote-user-as-admin.sh)  
     Promotes the test user to administrator level.
   - [administration--recover-test-user](bash-commands--specific/administration--recover-test-user.sh)  
     Recovers the test user by reseting the password to a certain value.
