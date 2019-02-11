@@ -3,6 +3,12 @@
 !.vscode/
 !.vscode/tasks.json
 !bash-commands
+!bash-commands--specific/
+!bash-commands--specific/administration--demote-user-from-admin.sh
+!bash-commands--specific/administration--promote-user-as-admin.sh
+!bash-commands--specific/administration--recover-test-user.sh
+!bash-commands--specific/administration--register-test-user.sh
+!bash-commands--specific/setup--generate-configuration.sh
 !bash-util
 !.gitignore
 !.gitmodules

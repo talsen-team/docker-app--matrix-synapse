@@ -3,6 +3,68 @@
     "tasks":
     [
         {
+            "label":          "administration--demote-user-from-admin",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands--specific/administration--demote-user-from-admin.sh",
+                              ".",
+                              "default.docker-compose",
+                              "test",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "administration--promote-test-user-as-admin",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands--specific/administration--promote-user-as-admin.sh",
+                              ".",
+                              "default.docker-compose",
+                              "test",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "administration--recover-test-user",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands--specific/administration--recover-test-user.sh",
+                              ".",
+                              "default.docker-compose",
+                              "test",
+                              "recover",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "administration--register-test-user",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands--specific/administration--register-test-user.sh",
+                              ".",
+                              "default.docker-compose",
+                              "test",
+                              "test",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":          "browser--open-application-url",
             "type":           "shell",
             "command":        "/bin/bash",
@@ -213,11 +275,26 @@
             "problemMatcher": [ ],
         },
         {
-            "label":         "git--pull-and-update-submodules",
-            "type":          "shell",
-            "command":       "/bin/bash",
-            "args": [
-                             "bash-commands/git--pull-and-update-submodules.sh",
+            "label":          "git--pull-and-update-submodules",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-commands/git--pull-and-update-submodules.sh",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "setup--generate-configuration",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands--specific/setup--generate-configuration.sh",
+                              ".",
+                              "default.docker-compose",
             ],
             "problemMatcher": [ ],
         },
