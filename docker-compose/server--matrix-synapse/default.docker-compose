@@ -1,0 +1,17 @@
+version:            '3'
+
+services:
+  server--matrix-synapse:
+    build:
+      context:      './../../docker/server--matrix-synapse'
+      dockerfile:   'default.docker'
+    command:        '${HOST_SERVICE_SERVER_MATRIX_SYNAPSE_COMMAND}'
+    container_name: 'server--matrix-synapse'
+    env_file:
+      -             './../../container.env'
+    image:          'talsenteam/docker-matrix-synapse:v0.34.1.1'
+    ports:
+      -             '80:8008'
+    restart:        '${HOST_SERVICE_SERVER_MATRIX_SYNAPSE_RESTART_POLICY}'
+    volumes:
+      -             '${HOST_PATH_TO_VOLUMES_ROOT}/server--matrix-synapse/data:/data'

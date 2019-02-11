@@ -23,6 +23,9 @@
 !docker/server--matrix-synapse/rootfs/opt/matrix-synapse/register-matrix-user.expect
 !docker/server--matrix-synapse/rootfs/opt/matrix-synapse/register-matrix-user.sh
 !docker/server--matrix-synapse/default.docker
+!docker-compose/
+!docker-compose/server--matrix-synapse/
+!docker-compose/server--matrix-synapse/default.docker-compose
 !.gitignore
 !.gitmodules
 !LICENCE
