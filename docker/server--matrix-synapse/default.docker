@@ -1,0 +1,12 @@
+FROM avhost/docker-matrix:v0.34.1.1
+
+RUN apt-get update                             \
+ && apt-get install -y --no-install-recommends \
+                   curl                        \
+                   expect                      \
+                   jq                          \
+                   sqlite3
+
+COPY ./rootfs/opt/matrix-synapse/ /opt/matrix-synapse
+
+RUN chmod +x /opt/matrix-synapse/*
