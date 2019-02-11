@@ -9,6 +9,7 @@ echo "Leaving all rooms ..."
 if [ -z "${VAR_TOKEN_OF_USER_TO_DISJOIN}" ];
 then
     echo "No user token was provided."
+    echo "Leaving all rooms ... skipped"
     exit 0
 fi
 
@@ -17,6 +18,7 @@ VAR_ROOMS_TO_DISJOIN_FROM="$( curl -s "http://localhost:8008/_matrix/client/r0/j
 if [ -z "${VAR_ROOMS_TO_DISJOIN_FROM}" ];
 then
     echo "Token ${VAR_TOKEN_OF_USER_TO_DISJOIN} has no rooms to leave."
+    echo "Leaving all rooms ... skipped"
     exit 0
 fi
 
