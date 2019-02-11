@@ -18,10 +18,21 @@ To easily experiment with matrix-synapse, the following pre-requisites are prefe
 
 Then open the cloned repository directory with VS Code and use any of the custom tasks.
 
+Before starting the container via task `docker-compose--compose--up`, perform the task `setup--generate-configuration` once.
+
 ## custom VS Code tasks
 
 Any docker-compose--* tasks refer to the default [dockerfile](docker/server--matrix-synapse/default.docker) as well as to the [docker-compose](docker-compose/server--matrix-synapse/default.docker-compose) configuration if required for command execution.
 
+- administration--*
+  - [administration--demote-user-from-admin](bash-commands--specific/administration--demote-user-from-admin.sh)  
+    Demotes the test user from administrator level to standard user level.
+  - [administration--promote-test-user-as-admin](bash-commands--specific/administration--promote-test-user-as-admin.sh)  
+    Promotes the test user to administrator level.
+  - [administration--recover-test-user](bash-commands--specific/administration--recover-test-user.sh)  
+    Recovers the test user by reseting the password to a certain value.
+  - [administration--register-test-user](bash-commands--specific/administration--register-test-user.sh)  
+    Registers a test user which can be used to log in to the local matrix-synapse server via a matrix client.
 - browser--*
   - [browser--open-application-url](bash-commands/browser--open-application-url.sh)  
     Opens the localhost docker service URL in the default web-browser. The opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL.
@@ -63,3 +74,6 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--mat
 - git--*
   - [git--pull-and-update-submodules](bash-commands/git--pull-and-update-submodules.sh)  
     Rebase pulls the latest repository changes and the updates all git submodules if there are any.
+- setup--*
+  - [setup--generate-configuration](bash-commands--specific/setup--generate-configuration.sh)  
+    Generates necessary matrix-synapse server configuration files.
