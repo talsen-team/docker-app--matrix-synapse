@@ -22,6 +22,10 @@
 !docker/server--matrix-synapse/rootfs/opt/matrix-synapse/recover-matrix-user.sh
 !docker/server--matrix-synapse/rootfs/opt/matrix-synapse/register-matrix-user.expect
 !docker/server--matrix-synapse/rootfs/opt/matrix-synapse/register-matrix-user.sh
+!docker/server--matrix-synapse/rootfs/usr/
+!docker/server--matrix-synapse/rootfs/usr/local/
+!docker/server--matrix-synapse/rootfs/usr/local/bin/
+!docker/server--matrix-synapse/rootfs/usr/local/bin/hash_password
 !docker/server--matrix-synapse/default.docker
 !docker-compose/
 !docker-compose/server--matrix-synapse/

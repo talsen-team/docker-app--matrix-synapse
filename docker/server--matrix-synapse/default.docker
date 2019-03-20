@@ -7,6 +7,8 @@ RUN apt-get update                             \
                    jq                          \
                    sqlite3
 
-COPY ./rootfs/opt/matrix-synapse/ /opt/matrix-synapse
+COPY ./rootfs/opt/matrix-synapse/         /opt/matrix-synapse
+COPY ./rootfs/usr/local/bin/hash_password /usr/local/bin/hash_password
 
-RUN chmod +x /opt/matrix-synapse/*
+RUN chmod +x /opt/matrix-synapse/*        \
+ && chmod +x /usr/local/bin/hash_password
