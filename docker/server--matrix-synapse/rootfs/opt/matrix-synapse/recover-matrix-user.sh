@@ -9,12 +9,12 @@ VAR_PASS_USER=${2}
 
 VAR_DOMAIN_MATRIX=${SERVER_NAME}
 
-if ! [[ "${VAR_NAME_USER}" =~ ^[0-9a-zA-Z.]+$ ]]; then
+if ! [[ "${VAR_NAME_USER}" =~ ^[0-9a-zA-Z.-]+$ ]]; then
   echo >&2 "Error: Provided user name '${VAR_NAME_USER}' contains invalid characters."
   exit 1
 fi
 
-if ! [[ "${VAR_DOMAIN_MATRIX}" =~ ^[0-9a-zA-Z.]+$ ]]; then
+if ! [[ "${VAR_DOMAIN_MATRIX}" =~ ^[0-9a-zA-Z.-]+$ ]]; then
   echo >&2 "Error: Provided matrix domain '${VAR_DOMAIN_MATRIX}' contains invalid characters."
   exit 1
 fi

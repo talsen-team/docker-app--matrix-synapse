@@ -7,7 +7,7 @@ cd /data
 VAR_NAME_USER=${1}
 VAR_PASS_USER=${2}
 
-if ! [[ "${VAR_NAME_USER}" =~ ^[0-9a-zA-Z.]+$ ]]; then
+if ! [[ "${VAR_NAME_USER}" =~ ^[0-9a-zA-Z.-]+$ ]]; then
   echo >&2 "Error: Provided user name '${VAR_NAME_USER}' contains invalid characters."
   exit 1
 fi
