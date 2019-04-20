@@ -1,8 +1,8 @@
 # docker-app: matrix-synapse
 
-[![Docker Automated build](https://img.shields.io/docker/automated/talsenteam/docker-matrix-synapse.svg?style=for-the-badge)](https://hub.docker.com/r/talsenteam/docker-matrix-synapse/)
+[![Docker Automated build](https://img.shields.io/docker/cloud/automated/talsenteam/docker-matrix-synapse.svg?style=for-the-badge)](https://hub.docker.com/r/talsenteam/docker-matrix-synapse/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/talsenteam/docker-matrix-synapse.svg?style=for-the-badge)](https://hub.docker.com/r/talsenteam/docker-matrix-synapse/)
-[![Docker Build Status](https://img.shields.io/docker/build/talsenteam/docker-matrix-synapse.svg?style=for-the-badge)](https://hub.docker.com/r/talsenteam/docker-matrix-synapse/)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/talsenteam/docker-matrix-synapse.svg?style=for-the-badge)](https://hub.docker.com/r/talsenteam/docker-matrix-synapse/)
 
 The server application matrix-synapse ready to run inside a docker container.
 
