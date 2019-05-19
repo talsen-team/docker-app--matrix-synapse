@@ -29,9 +29,9 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--mat
     Demotes the test user from administrator level to standard user level.
   - [administration--promote-test-user-as-admin](bash-commands--specific/administration--promote-user-as-admin.sh)  
     Promotes the test user to administrator level.
-  - [administration--recover-test-user](bash-commands--specific/administration--recover-test-user.sh)  
+  - [administration--recover-test-user](bash-commands--specific/administration--recover-user.sh)  
     Recovers the test user by reseting the password to a certain value.
-  - [administration--register-test-user](bash-commands--specific/administration--register-test-user.sh)  
+  - [administration--register-test-user](bash-commands--specific/administration--register-user.sh)  
     Registers a test user which can be used to log in to the local matrix-synapse server via a matrix client.
 - browser--*
   - [browser--open-application-url](//github.com/talsen-team/docker-util--bash-commands/blob/master/browser--open-application-url.sh)  
