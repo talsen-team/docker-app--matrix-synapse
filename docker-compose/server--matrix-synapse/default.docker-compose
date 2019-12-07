@@ -7,6 +7,12 @@ services:
       dockerfile:   'default.docker'
     command:        '${HOST_SERVICE_SERVER_MATRIX_SYNAPSE_COMMAND}'
     container_name: 'server--matrix-synapse'
+    deploy:
+      resources:
+        limits:
+          memory:     '2G'
+        reservations:
+          memory:     '512M'
     env_file:
       -             './../../container.env'
     image:          'talsenteam/docker-matrix-synapse:v0.34.1.1'
